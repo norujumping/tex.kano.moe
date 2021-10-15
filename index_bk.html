@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Flying Bicycles</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- math packages -->
+    <script src="https://unpkg.com/mathjs@9.5.1/lib/browser/math.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+   <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Flying Bicycles</h3>
+                <strong>FB</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Modes
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Mode 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Mode 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Mode 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Courses
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Course 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Course 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Course 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <!-- <span>Toggle Sidebar</span> -->
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Course</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <h2>Learn your Course with Latex</h2>
+            <h3>Teaser 1</h3>
+            <table>
+            <tr>
+                <th>Goal</th>
+                <td><div id="target_eq1"></div></td>
+            </tr>
+            <tr>
+                <th>Output</th>
+                <td><div id="output_eq1"></div></td>
+            </tr>
+            <tr>
+                <th>Input</th>
+                <td><input type="text" id="input_expr1"/></td>
+            </tr>
+            </table>
+
+            <div class="line"></div>
+
+            <h3>Teaser 2</h3>
+            <table>
+            <tr>
+                <th>Goal</th>
+                <td><div id="target_eq2"></div></td>
+            </tr>
+            <tr>
+                <th>Output</th>
+                <td><div id="output_eq2"></div></td>
+            </tr>
+            <tr>
+                <th>Input</th>
+                <td><input type="text" id="input_expr2"/></td>
+            </tr>
+            </table>
+
+            <div class="line"></div>
+
+            <h3>Teaser 3</h3>
+            <table>
+            <tr>
+                <th>Goal</th>
+                <td><div id="target_eq3"></div></td>
+            </tr>
+            <tr>
+                <th>Output</th>
+                <td><div id="output_eq3"></div></td>
+            </tr>
+            <tr>
+                <th>Input</th>
+                <td><input type="text" id="input_expr3"/></td>
+            </tr>
+            </table>
+
+            <div class="line"></div>
+
+        </div>
+    </div>
+
+<!-- Custom -->
+<script src="nav.js"></script>
+<script src="play.js"></script>
+<script>
+class Game{
+    constructor(target_eq, output_eq, input_expr, target_expr,
+            hint=None) {
+
+        this.target_eq = target_eq
+        this.output_eq = output_eq
+        this.input_expr = input_expr
+        this.target_expr = target_expr
+        this.hint = hint
+    }
+    play(){
+        play_table_single(this.target_eq, this.output_eq,
+                          this.input_expr, this.target_expr)
+    }
+    show_hint(){
+
+    }
+}
+game1 = new Game('target_eq1', 'output_eq1',
+    'input_expr1', 'c=\\sqrt{a^2+b^2}',
+    hint='square root : \\sqrt')
+game2 = new Game('target_eq2', 'output_eq2',
+    'input_expr2', 'x=\\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}',
+    hint='plus minus : \\pm, fraction: ]\frac_{}{}')
+game3 = new Game('target_eq3', 'output_eq3',
+    'input_expr3', '\\sum_{k=0}^{n}k^3=(\\sum_{k=0}^{n}k)^2',
+    'summation: \\sum_{}^{}, square: ^2')
+game1.play()
+game2.play()
+game3.play()
+</script>
+</body>
+<
